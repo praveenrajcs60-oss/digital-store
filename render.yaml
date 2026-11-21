@@ -3,7 +3,7 @@ services:
     name: digital-store
     runtime: node
     plan: free
-    buildCommand: npm --prefix client install && npm --prefix client run build && npm --prefix server install
+    buildCommand: npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install
     startCommand: node server/src/index.js
     envVars:
       - key: NODE_ENV
