@@ -1,0 +1,14 @@
+{
+  "name": "digital-store",
+  "version": "1.0.0",
+  "description": "Full-stack Digital Downloads Store built with React, Vite, Node.js, and Stripe, ready for Render deployment.",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/src/index.js",
+    "dev:server": "node server/src/index.js",
+    "dev:client": "npm --prefix client run dev"
+  },
+  "keywords": ["ecommerce", "digital-products", "react", "vite", "stripe", "render"],
+  "author": "",
+  "license": "MIT"
+}
